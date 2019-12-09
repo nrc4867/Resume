@@ -29,6 +29,9 @@
 \def \name#1{\def\@name{#1}}        % \name command can be used to set name
 \def \@name {}                      % Set \@name to empty by default
 
+\def \avaibility#1{\def\@avaibility{#1}}
+\def \@avaibility {}
+
 \def \addressSep {$\diamond$}         % Set default address seperator
 
 % One or two address lines can be specified 
@@ -73,6 +76,9 @@
     \printaddress{\@addressone}}
   \@ifundefined{@addresstwo}{}{     % Print the second address if specified
     \printaddress{\@addresstwo}}
+  \@ifundefined{@avaibility}{}{
+    \printaddress{\@avaibility}
+  }
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
