@@ -23,13 +23,18 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{enumitem}
+\usepackage[none]{hyphenat}
+
+\setlength{\parskip}{4pt}
+
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Nicholas Chieppa} % Your name
 \address{7 Elmay Place \\ East Northport NY 11731} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 \address{631-388-0975 \\ nicholaschieppa@gmail.com} % Your phone number and email
-\avaibility{Available January to August 2020}
+\avaibility{Available to start in May of 2020}
 
 \begin{document}
 
@@ -38,15 +43,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Objective}
-Diligent computer science student looking for an organization that can provide me with opportunity to improve my skills, and the opportunity to meaningfully advance a team objective. 
+Diligent computer science student looking for an organization where I can apply my Software Engineering skills to
+ meaningfully advance a team objective and meet company needs. 
 \end{rSection}
 
 \begin{rSection}{Education}
 
-{\bf Rochester Institute of Technology, Rochester NY} \hfill {\em Expected, May 2021} 
-\\ Bachelor of Computer Science
-\\ GPA: 3.55 / 4.00
-\\ Relevant Coursework Includes:  Data Management, Parallel and Distributed Systems, Linear Algebra, Programming Mechanics, Introduction to Software Engineering 
+{\bf Rochester Institute of Technology, Rochester, NY} \hfill {\em Expected, May 2021} 
+\\ Bachelor of Science in Computer Science
+\\ GPA: 3.56 / 4.00
+\\ Coursework Includes:  Data Management, Parallel and Distributed Systems, Computer Graphics, Artificial Intelligence, Software Engineering, and Web.
+
 %Minor in Linguistics \smallskip \\
 %Member of Eta Kappa Nu \\
 %Member of Upsilon Pi Epsilon \\
@@ -57,18 +64,27 @@ Diligent computer science student looking for an organization that can provide m
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Projects}
 {\bf Stream-Notifier (Java)} \hfill {\em Personal Project}
-
-\begin{itemize}
+\setlist{nolistsep}
+\begin{itemize}[noitemsep]
     \item Developed a bot that can respond to visual events that occur on a twitch.tv live-stream. 
-    \item Implemented an android interface that can receive notifications of events that happen on stream.
+    \item Designed a simple algorithm to create a template image which could be compared against sections of a live captured image.
+    \item Implemented an android interface that can receive notifications of events that happen on stream and display actions a user can take.
+\end{itemize}
+
+{\bf Database Management System (Java)} \hfill {\em Team Semester Project}
+\setlist{nolistsep}
+\begin{itemize}[noitemsep]
+    \item Created a database system from scratch; implementing I/O, conditional searches, and projection on general datasets.
+    \item Made use of software buffers to reduce the amount of time spent writing to disk, improving the databases speed. 
+    \item Coordinated meetings with team members, scheduled rooms, and slack meetings.
 \end{itemize}
 
 {\bf Web-Checkers (Java)} \hfill {\em Team Semester Project}
-
-\begin{itemize}
+\setlist{nolistsep}
+\begin{itemize}[noitemsep]
     \item Coordinated with a team to develop an online checkers game.
     \item Used agile design principles to plan and elaborate on development goals.
-    \item Integrated Github's branching feature into the teams workflow in order to create and test each feature independently.
+    \item Integrated GitHub's branching feature into the teams workflow in order to create and test each feature independently.
 \end{itemize}
 
 \end{rSection}
@@ -80,9 +96,8 @@ Diligent computer science student looking for an organization that can provide m
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Experienced Programming Languages: \ & Java, C, Python\\
-Some Programming Experience With: & PHP, JavaScript (HTML), Junit, SQL\\
-Software \& Tools: & Github, Trello, Vim, Visual Studio,  
-\\&IntelliJ, PyCharm, Android Studio\\
+Some Programming Experience With: & OpenGL, C++, JavaScript (HTML), Junit, SQL\\
+Software \& Tools: & GitHub, Trello, Vim, Visual Studio, IntelliJ
 \end{tabular}
 
 \end{rSection}
@@ -92,8 +107,9 @@ Software \& Tools: & Github, Trello, Vim, Visual Studio,
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Academic Achievements} 
-Dean's List at RIT  \hfill { \em Fall 2017 - Spring 2019}
+Dean's List at RIT  \hfill { \em Fall 2017 - Present}
 \end{rSection}
+
 
 %	OTHER WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
