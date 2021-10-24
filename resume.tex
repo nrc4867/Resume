@@ -29,15 +29,20 @@
 \usepackage{lineno}
 % \linenumbers
 
+\usepackage{datetime}
+
+\newdateformat{monthyeardate}{%
+\monthname[\THEMONTH], \THEYEAR}
+
 \setlength{\parskip}{4pt}
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Nicholas Chieppa} % Your name
 \address{7 Elmay Place \\ East Northport NY 11731} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary address (optional)
 \address{631-388-0975 \\ nicholaschieppa@gmail.com} % Your phone number and email
-\avaibility{Available to start in June 2021}
+\avaibility{Available to start in \monthyeardate\today}
 
 \begin{document}
 
@@ -46,17 +51,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Objective}
-Diligent computer science student looking for an organization where I can apply my Software Engineering skills to
- meaningfully advance a team objective and meet company needs. 
+Motivated computer science student seeking an internship at a company that can offer a 
+place to prove coding skill and offer carrier growth.
 \end{rSection}
 
 \begin{rSection}{Education}
 
-{\bf Rochester Institute of Technology, Rochester, NY} \hfill {\em Expected May 2021} 
+{\bf Rochester Institute of Technology, Rochester, NY} \hfill {\em Expected May 2022} 
 \\ Bachelor of Science in Computer Science
 \\ Minor in Mathematics
-\\ GPA: 3.56 / 4.00
-\\ Coursework Includes:  Data Management, Parallel and Distributed Systems, Computer Graphics, Artificial Intelligence, Software Engineering, and Web development.
+\\ GPA: 3.59 / 4.00
+\\ Coursework Includes:  Data Management, Data Mining, Parallel and Distributed Systems, Computer Graphics, Artificial Intelligence, Software Engineering, and Web development.
 
 %Minor in Linguistics \smallskip \\
 %Member of Eta Kappa Nu \\
@@ -67,7 +72,7 @@ Diligent computer science student looking for an organization where I can apply 
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Work Experience} 
-Software Engineering Intern - Homesite Insurance \hfill {\em June to December 2020}
+{\bf Software Engineering Intern - Homesite Insurance - Boston, MA} \hfill {\em June to December 2020}
 \setlist{nolistsep}
 \begin{itemize}[noitemsep]
     \item Collaborated with experienced cross-disciplinary Homesite team members to analyze, design and develop innovative product features.
